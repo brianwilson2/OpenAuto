@@ -1,0 +1,25 @@
+{
+	"BUILD_DIR" : "/home/brian/openauto/build/autoapp_autogen",
+	"CMAKE_BINARY_DIR" : "/home/brian/openauto/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/brian/openauto/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/brian/openauto",
+	"CMAKE_SOURCE_DIR" : "/home/brian/openauto",
+	"INCLUDE_DIR" : "/home/brian/openauto/build/autoapp_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/brian/openauto/assets/ico_warning.png",
+		"/home/brian/openauto/assets/ico_setting.png",
+		"/home/brian/openauto/assets/ico_info.png",
+		"/home/brian/openauto/assets/ico_androidauto.png"
+	],
+	"LOCK_FILE" : "/home/brian/openauto/build/CMakeFiles/autoapp_autogen.dir/AutoRcc_resources_GBFAFXFCVO_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "GBFAFXFCVO",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt5/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/brian/openauto/build/CMakeFiles/autoapp_autogen.dir/AutoRcc_resources_GBFAFXFCVO_Used.txt",
+	"SOURCE" : "/home/brian/openauto/assets/resources.qrc",
+	"VERBOSITY" : 0
+}

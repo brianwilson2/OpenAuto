@@ -29,8 +29,8 @@ namespace autoapp
 namespace service
 {
 
-SensorService::SensorService(boost::asio::io_service& ioService, aasdk::messenger::IMessenger::Pointer messenger)
-    : strand_(ioService)
+SensorService::SensorService(boost::asio::io_context& ioService, aasdk::messenger::IMessenger::Pointer messenger)
+    : strand_(ioService.get_executor())
     , channel_(std::make_shared<aasdk::channel::sensor::SensorServiceChannel>(strand_, std::move(messenger)))
 {
 

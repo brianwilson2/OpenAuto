@@ -1,0 +1,6 @@
+/home/brian/openauto/build/CMakeFiles/autoapp.dir
+/home/brian/openauto/build/CMakeFiles/btservice.dir
+/home/brian/openauto/build/CMakeFiles/edit_cache.dir
+/home/brian/openauto/build/CMakeFiles/rebuild_cache.dir
+/home/brian/openauto/build/CMakeFiles/autoapp_autogen.dir
+/home/brian/openauto/build/CMakeFiles/btservice_autogen.dir

@@ -28,8 +28,8 @@ namespace autoapp
 namespace service
 {
 
-BluetoothService::BluetoothService(boost::asio::io_service& ioService, aasdk::messenger::IMessenger::Pointer messenger, projection::IBluetoothDevice::Pointer bluetoothDevice)
-    : strand_(ioService)
+BluetoothService::BluetoothService(boost::asio::io_context& ioService, aasdk::messenger::IMessenger::Pointer messenger, projection::IBluetoothDevice::Pointer bluetoothDevice)
+    : strand_(ioService.get_executor())
     , channel_(std::make_shared<aasdk::channel::bluetooth::BluetoothServiceChannel>(strand_, std::move(messenger)))
     , bluetoothDevice_(std::move(bluetoothDevice))
 {
