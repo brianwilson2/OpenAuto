@@ -28,8 +28,8 @@ namespace autoapp
 namespace service
 {
 
-VideoService::VideoService(boost::asio::io_context& ioService, aasdk::messenger::IMessenger::Pointer messenger, projection::IVideoOutput::Pointer videoOutput)
-    : strand_(ioService.get_executor())
+VideoService::VideoService(boost::asio::io_service& ioService, aasdk::messenger::IMessenger::Pointer messenger, projection::IVideoOutput::Pointer videoOutput)
+    : strand_(ioService)
     , channel_(std::make_shared<aasdk::channel::av::VideoServiceChannel>(strand_, std::move(messenger)))
     , videoOutput_(std::move(videoOutput))
     , session_(-1)

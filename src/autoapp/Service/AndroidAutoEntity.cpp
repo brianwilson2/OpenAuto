@@ -29,14 +29,14 @@ namespace autoapp
 namespace service
 {
 
-AndroidAutoEntity::AndroidAutoEntity(boost::asio::io_context& ioService,
+AndroidAutoEntity::AndroidAutoEntity(boost::asio::io_service& ioService,
                                      aasdk::messenger::ICryptor::Pointer cryptor,
                                      aasdk::transport::ITransport::Pointer transport,
                                      aasdk::messenger::IMessenger::Pointer messenger,
                                      configuration::IConfiguration::Pointer configuration,
                                      ServiceList serviceList,
                                      IPinger::Pointer pinger)
-    : strand_(ioService.get_executor())
+    : strand_(ioService)
     , cryptor_(std::move(cryptor))
     , transport_(std::move(transport))
     , messenger_(std::move(messenger))

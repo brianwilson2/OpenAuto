@@ -29,8 +29,8 @@ namespace autoapp
 namespace service
 {
 
-InputService::InputService(boost::asio::io_context& ioService, aasdk::messenger::IMessenger::Pointer messenger, projection::IInputDevice::Pointer inputDevice)
-    : strand_(ioService.get_executor())
+InputService::InputService(boost::asio::io_service& ioService, aasdk::messenger::IMessenger::Pointer messenger, projection::IInputDevice::Pointer inputDevice)
+    : strand_(ioService)
     , channel_(std::make_shared<aasdk::channel::input::InputServiceChannel>(strand_, std::move(messenger)))
     , inputDevice_(std::move(inputDevice))
 {
